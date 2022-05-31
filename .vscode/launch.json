@@ -15,7 +15,8 @@
       "name": "Attach to packager",
       "cwd": "${workspaceFolder}",
       "type": "reactnative",
-      "request": "attach"
+      "request": "attach",
+      "sourceMaps": true
     }
   ]
 }

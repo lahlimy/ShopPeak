@@ -1,23 +1,8 @@
-import { StyleSheet, Text, View, Platform, StatusBar, Dimensions} from "react-native";
+import React from "react";
+import { View } from "react-native";
+import ViewImageScreen from "./app/screen/ViewImageScreen";
+/* import WelcomeScreen from "./app/screen/WelcomeScreen"; */
 
 export default function App() {
-  console.log(Dimensions.get("screen"))
-  
-  return (
-    <View style={styles.container}>
-      <Text>
-        Hello React Native !
-      </Text>
-    </View>
-  );
+  return <ViewImageScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
