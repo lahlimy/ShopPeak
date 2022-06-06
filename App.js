@@ -1,7 +1,7 @@
 import React from "react";
-import MessageScreen from "./app/screen/MessageScreen";
+import MessagesScreen from "./app/screen/MessagesScreen";
 
 
 export default function App() {
-  return <MessageScreen /> ;
+  return <MessagesScreen /> ;
 }
