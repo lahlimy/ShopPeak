@@ -2,34 +2,25 @@ import React, { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 
 import Screen from "../components/Screen";
-import ListItem from "../components/ListItem";
-import ListItemSperator from "../components/ListItemSperator";
-import ListItemDeleteAction from "../components/ListItemDeleteAction";
+import {
+  ListItem,
+  ListItemDeleteAction,
+  ListItemSeparator,
+} from "../components/lists";
 
 const initialMessages = [
   {
     id: 1,
-    title: "Samsung Galaxy S7",
-    description: "Please, it's stell Working ?",
-    image: require("../assets/image1.jpg"),
+    title: "Mosh Hamedani",
+    description: "Hey! Is this item still available?",
+    image: require("../assets/mosh.jpg"),
   },
   {
     id: 2,
-    title: "MacBook 2013 '15' Pouce" ,
-    description: "How Much it ?",
-    image: require("../assets/image2.jpg"),
-  },
-  {
-    id: 3,
-    title: "Iphone 7 Plus",
-    description: "Can u send me anthor Images ?",
-    image: require("../assets/image3.jpg"),
-  },
-  {
-    id: 4,
-    title: "Jacket dior RED",
-    description: "it's orginal",
-    image: require("../assets/image4.jpg"),
+    title: "Mosh Hamedani",
+    description:
+      "I'm interested in this item. When will you be able to post it?",
+    image: require("../assets/mosh.jpg"),
   },
 ];
 
@@ -58,15 +49,15 @@ function MessagesScreen(props) {
             )}
           />
         )}
-        ItemSeparatorComponent={ListItemSperator}
+        ItemSeparatorComponent={ListItemSeparator}
         refreshing={refreshing}
         onRefresh={() => {
           setMessages([
             {
               id: 2,
-              title: "MacBook 2013 '15' Pouce" ,
-              description: "How Much it ?",
-              image: require("../assets/image2.jpg"),
+              title: "T2",
+              description: "D2",
+              image: require("../assets/mosh.jpg"),
             },
           ]);
         }}
