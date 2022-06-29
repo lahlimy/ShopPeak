@@ -1,6 +1,17 @@
 import React from "react";
-import RegisterScreen from "./app/screens/RegisterScreen";
+import OfflineNotice from "./app/components/OfflineNotice";
+import { NavigationContainer } from "@react-navigation/native";
+
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
 
 export default function App() {
-  return  <RegisterScreen /> ;
+  return (
+    <>
+      <OfflineNotice />
+      <NavigationContainer theme={navigationTheme}>
+        <AppNavigator />
+      </NavigationContainer>
+    </>
+  );
 }
