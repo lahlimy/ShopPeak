@@ -1,6 +1,6 @@
 # react-native-marketplace-from-scratch
 
-A Frontend marketplace for selling used stuff with React Native.
+A Frontend marketplace for selling used stuff with React and React Native.
 
 - Branches are in the order they were coded.
 
@@ -8,6 +8,7 @@ A Frontend marketplace for selling used stuff with React Native.
 
 This project is made up of 5 packages that share code using npm Workspaces.
 
+- web (React)
 - app (React Native app)
 - server (Express Javascript server)
 - common (Code shared between app, and server)
@@ -44,8 +45,8 @@ npm
 
 1. Website register/login
 2. Deploy backend and frontend
-3. App register/login
-4. App forgot password
-5. App create listing
-6. App view listings
+3. web and App register/login
+4. web and App forgot password
+5. web and App create listing
+6. web and App view listings
 7. logout
