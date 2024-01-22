@@ -1,52 +1,47 @@
-# react-native-marketplace-from-scratch
+# ShopPeak
 
-A Frontend marketplace for selling used stuff with React and React Native.
+A frontend marketplace app for selling used items, built with React and React Native.
 
-- Branches are in the order they were coded.
+## Project Structure
 
-## Packages
+The project comprises four packages that leverage npm Workspaces for code sharing:
 
-This project is made up of 5 packages that share code using npm Workspaces.
-
-- web (React)
-- app (React Native app)
-- server (Express Javascript server)
-- common (Code shared between app, and server)
-- controller (Components shared between app and server)
+- **app:** React Native app
+- **server:** Express JavaScript server
+- **common:** Shared code between the app and server
+- **controller:** Components shared between the app and server
 
 ## Installation
 
-1. Clone project
+1. Clone the project:
 
-```
-git clone https://github.com/lahlimy/react-native-marketplace-from-scratch.git
-```
+    ```bash
+    git clone https://github.com/lahlimy/ShopPeak.git
+    ```
 
-2. cd into folder
+2. Navigate into the project folder:
 
-```
-cd react-native-marketplace-from-scratch
-```
+    ```bash
+    cd ShopPeak
+    ```
 
-3. Download dependencies
+3. Install dependencies:
 
-```
-npm
-```
+    ```bash
+    npm install
+    ```
 
 ## Usage
 
-1. Start server `npm start` in `packages/scripts`
+1. Start the server with `npm start` in `packages/scripts`.
 
-2. Now you can run `npm start` in `packages/web` or `packages/app` to start the website or app.
-
+2. Run `npm start` in `packages/app` to launch the app.
 
 ## Features
 
-1. Website register/login
-2. Deploy backend and frontend
-3. web and App register/login
-4. web and App forgot password
-5. web and App create listing
-6. web and App view listings
-7. logout
+1. User registration and login on the app.
+2. Deployment of backend and frontend.
+3. Password recovery on the app.
+4. Creating listings on the app.
+5. Viewing listings on the app.
+6. Logout functionality.
